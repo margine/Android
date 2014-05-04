@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.lightnote.fragment.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/notesSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="7dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical"
+            android:shrinkColumns="*" >
+			
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:shrinkColumns="*">
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="addOneNote"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/text" />
+
+                    <ImageView
+                        android:id="@+id/edit_voice"
+                          android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="addOneRecord"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/microphone" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/edit_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="addOnePhoto"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/camera" />
+
+                    <ImageView
+                        android:id="@+id/edit_pen"
+                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="addAttachment"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tuya" />
+                </TableRow>
+            </TableLayout>
+
+            <!--TextView
+                android:id="@+id/note0"
+                android:layout_weight="1.29"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginRight="3dp"
+                android:background="@color/purple"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lineSpacingExtra="4dip"
+                android:lines="7"
+                android:longClickable="true"
+                android:padding="5dip"
+                android:singleLine="false"
+                android:text="点击左边的小图标 ，即可创建不同的笔记哦~快来创建你的一个笔记吧~"
+                android:textSize="18sp" /-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="photo_choice">
+		<item>拍照</item>
+		<item>从相册选取</item>
+	</string-array> 
+    
+    <string-array name="text_more_function">
+        <item>編輯</item>
+        <item>分享到人人</item>
+        <item>刪除</item>
+    </string-array>
+    
+    <string-array name="img_more_function">
+        <item>浏览</item>
+        <item>分享到人人</item>
+        <item>刪除</item>
+    </string-array>
+       
+    <string-array name="voice_more_function">
+        <item>听听</item>
+        <item>分享到人人</item>
+        <item>刪除</item>
+    </string-array>
+</resources>

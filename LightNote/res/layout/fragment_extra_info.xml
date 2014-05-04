@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.lightnote.fragment.MainActivity$PlaceholderFragment">
+
+	<TextView
+	    android:id="@+id/extra_info"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_horizontal"
+	    android:layout_margin="20dp"
+	    android:textSize="20sp"
+	    android:text="可以随时随地添加文字、照片、语音以及附件到轻记下。每条记录都会以彩色纸片展现出来，初期开发，功能还有待完善。请谅解"/>
+</RelativeLayout>
